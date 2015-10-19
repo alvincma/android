@@ -1,0 +1,9 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+	<color name="event_background">#AAFFFF99</color>
+	<color name="event_lines">#FF0000FF</color>
+	<color name="event_margin">#90FF0000</color>
+	<color name="event_text">#AA0000FF</color>
+	
+</resources>

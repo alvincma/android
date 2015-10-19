@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobile Tzu Chi</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="welcome_text">Tzu Chi Foundation</string>
+    <string name="events_feed">http://mtc-mock-cal.appspot.com/get</string>
+    <string name="registered_events">Registered Volunteering Events</string>
+    <string name="preferences">Preferences</string>
+    <string name="menu_registered_events">Registered Events</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_preferences">Preferences</string>
+    <string name="auto_inquiry_prompt">Auto Inquiry?</string>
+    <string name="inquiry_freq_prompt">Inquiry Frequency</string>
+    <string name="unregister">Unregister</string>
+    <string name="add_event_title">Attending This Volunteering Event?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_inquiry_prompt"
+    />
+    <CheckBox android:id="@+id/check_box_auto_inquiry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inquiry_freq_prompt"
+    />
+    <Spinner android:id="@+id/spinner_inquiry_freq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+    />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <Button android:id="@+id/cancelButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+        />
+        <Button android:id="@+id/okButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok"
+        />
+    </LinearLayout>      
+</LinearLayout>

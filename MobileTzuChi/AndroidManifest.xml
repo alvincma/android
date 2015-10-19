@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tzuchi.us.nca.mtc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.tzuchi.us.nca.mtc.MTCMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MTCRegisteredEvents"
+            android:label="@string/registered_events" />
+        <activity
+            android:name=".MTCPreferences"
+            android:label="@string/preferences" />
+        <activity 
+            android:name=".MTCAddEvent"
+            android:label="@string/add_event_title" />
+        <provider 
+            android:name=".MTCEventsProvider"
+            android:authorities="org.tzuchi.us.nca.provider.mtc" />
+        <service android:name=".MTCEventsQueryService">
+        </service>
+        <receiver android:name=".MTCEventsAlarmReceiver">
+            <intent-filter>
+                <action android:name="org.tzuchi.us.nca.mtc.ACTION_REFRESH_EVENTS_ALARM" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
